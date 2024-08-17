@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calculator-app-main</title>
+  <link rel="stylesheet" href="calculator-app-main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="settings-row">
+      <h2>calc</h2>
+      <span id="theme"><b>THEME</b></span>
+     <div class="mini-grid">
+      <span id="first"><b>1</b></span>
+      <span id="second"><b>2</b></span>
+      <span id="third"><b>3</b></span>
+      <div class="toggle-switch" id="toggle-switch">
+        <div onclick="changeTheme1()" class="toggle-circle t-1"></div>
+        <div onclick="changeTheme2()" class="toggle-circle t-2"></div>
+        <div onclick="changeTheme3()" class="toggle-circle t-3"></div>
+      </div>
+     </div>
+    </div>
+    <div class="text-box" >
+     <input type="text" id="entry" readonly>
+    </div>
+    <div class="calc-button" id="calc-button">
+      <button onclick="appendToDisplay('7')" class="buttons">7</button>
+      <button onclick="appendToDisplay('8')" class="buttons">8</button>
+      <button onclick="appendToDisplay('9')" class="buttons">9</button>
+      <button onclick="effacer()" class="buttons del"><b>DEL</b></button>
+      <button onclick="appendToDisplay('4')" class="buttons">4</button>
+      <button onclick="appendToDisplay('5')" class="buttons">5</button>
+      <button onclick="appendToDisplay('6')" class="buttons">6</button>
+      <button onclick="appendToDisplay('+')" class="buttons">+</button>
+      <button onclick="appendToDisplay('1')" class="buttons">1</button>
+      <button onclick="appendToDisplay('2')" class="buttons">2</button>
+      <button onclick="appendToDisplay('3')" class="buttons">3</button>
+      <button onclick="appendToDisplay('-')" class="buttons">-</button>
+      <button onclick="appendToDisplay('.')" class="buttons">.</button>
+      <button onclick="appendToDisplay('0')" class="buttons">0</button>
+      <button onclick="appendToDisplay('/')" class="buttons">/</button>
+      <button onclick="appendToDisplay('*')" class="buttons">x</button>
+      <button onclick="calculate()" class="button" id="equal">=</button>
+      <button onclick="clearAll()" class="button" id="reset"><b>RESET</b></button>
+      
+    </div>
+  </div>
+  <script src="calculator-app-main.js"></script>
+</body>
+
+</html>
